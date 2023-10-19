@@ -1,0 +1,391 @@
+@import "root.css";
+
+h1 {
+  font-size: 2rem;
+  width: 40vw;
+}
+
+.header h1 {
+  line-height: 4rem;
+}
+
+.header {
+  height: 100vh;
+}
+
+/* basic info */
+.basic-info {
+  height: 80vh;
+}
+
+.basic-info .column-1 {
+  text-align: right;
+  margin-left: 2rem;
+}
+
+.basic-info h1 {
+  width: 100%;
+}
+
+.basic-info .column-2 img {
+  width: 500px;
+}
+
+/* main-services */
+.main-services .item {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.main-services .item .item-line {
+  position: absolute;
+  width: 5px;
+  height: 100px;
+  transform: translateX(150px);
+  background-color: var(--main-color);
+  z-index: -1;
+}
+
+.main-services .item .icon {
+  width: 300px;
+  border: var(--main-color) 4px solid;
+  border-radius: 1.2rem;
+  background-color: var(--background-color);
+}
+
+.main-services .item .item-content {
+  display: block;
+  width: 50vw;
+}
+
+.main-services .item .item-title {
+  font-size: 1.3rem;
+  margin: 0.5rem;
+  font-weight: bold;
+}
+
+.main-services .item .item-text {
+  text-align: left;
+  margin: 0.5rem;
+  width: 70%;
+}
+
+/* FORM */
+
+#fs-frm input,
+#fs-frm select,
+#fs-frm textarea,
+#fs-frm fieldset,
+#fs-frm optgroup,
+#fs-frm label,
+#fs-frm #card-element:disabled {
+  font-family: inherit;
+  font-size: 100%;
+  color: inherit;
+  border: none;
+  border-radius: 0;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+#fs-frm label,
+#fs-frm legend,
+#fs-frm ::placeholder {
+  font-size: 0.825rem;
+  margin-bottom: 0.5rem;
+  padding-top: 0.2rem;
+  display: flex;
+  align-items: baseline;
+}
+
+/* border, padding, margin, width */
+#fs-frm input,
+#fs-frm select,
+#fs-frm textarea,
+#fs-frm #card-element {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 0.75em 1rem;
+  margin-bottom: 1.5rem;
+}
+#fs-frm input:focus,
+#fs-frm select:focus,
+#fs-frm textarea:focus {
+  background-color: white;
+  outline-style: solid;
+  outline-width: thin;
+  outline-color: gray;
+  outline-offset: -1px;
+}
+#fs-frm [type="text"],
+#fs-frm [type="email"] {
+  width: 100%;
+}
+#fs-frm [type="button"],
+#fs-frm [type="submit"],
+#fs-frm [type="reset"] {
+  width: auto;
+  cursor: pointer;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+}
+#fs-frm [type="button"]:focus,
+#fs-frm [type="submit"]:focus,
+#fs-frm [type="reset"]:focus {
+  outline: none;
+}
+#fs-frm [type="submit"],
+#fs-frm [type="reset"] {
+  margin-bottom: 0;
+}
+#fs-frm select {
+  text-transform: none;
+}
+
+#fs-frm [type="checkbox"] {
+  -webkit-appearance: checkbox;
+  -moz-appearance: checkbox;
+  appearance: checkbox;
+  display: inline-block;
+  width: auto;
+  margin: 0 0.5em 0 0 !important;
+}
+
+#fs-frm [type="radio"] {
+  -webkit-appearance: radio;
+  -moz-appearance: radio;
+  appearance: radio;
+}
+
+/* address, locale */
+#fs-frm fieldset.locale input[name="city"],
+#fs-frm fieldset.locale select[name="state"],
+#fs-frm fieldset.locale input[name="postal-code"] {
+  display: inline;
+}
+#fs-frm fieldset.locale input[name="city"] {
+  width: 52%;
+}
+#fs-frm fieldset.locale select[name="state"],
+#fs-frm fieldset.locale input[name="postal-code"] {
+  width: 20%;
+}
+#fs-frm fieldset.locale input[name="city"],
+#fs-frm fieldset.locale select[name="state"] {
+  margin-right: 3%;
+}
+#fs-frm [type="submit"] {
+  background-color: var(--main-color);
+  color: var(--light-color);
+  border-radius: 0.2rem;
+  border: none;
+  transition: 0.3s;
+}
+
+#fs-frm [type="submit"]:hover {
+  background-color: var(--second-color);
+  transform: translateY(-5%);
+}
+
+#fs-frm button {
+  background-color: var(--main-color);
+  color: var(--light-color);
+  border-radius: 0.2rem;
+  border: none;
+  transition: 0.3s;
+  padding: 1rem 1.5rem;
+}
+
+#fs-frm button:hover {
+  background-color: var(--second-color);
+  transform: translateY(-5%);
+}
+
+.box {
+  background-color: #ffff;
+  box-shadow: 0 -3em 3em rgba(0, 0, 0, 0.1), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.author {
+  height: 30vh;
+  text-align: center;
+}
+
+.author p {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+.text-link {
+  text-decoration: underline;
+  transition: 0.4s;
+}
+
+.text-link:hover {
+  color: var(--main-color);
+  text-decoration: underline;
+}
+
+@media (max-width: 1100px) {
+  nav {
+    position: none;
+    margin-bottom: 4rem;
+    text-align: center;
+  }
+
+  .hamburger-menu {
+    display: flex;
+  }
+
+  .links {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transform: translateX(100%);
+    background-color: white;
+    transition: 0.5s;
+    margin: none;
+  }
+
+  .links ul {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .links a.active {
+    margin: 0;
+  }
+
+  .services .items {
+    grid-template-columns: 1fr;
+  }
+
+  .services .item-parent {
+    height: auto;
+    margin: 4rem 1rem;
+  }
+
+  .services .item-line {
+    transform: translateX(-480px);
+  }
+}
+
+@media (max-width: 700px) {
+  .section-header {
+    margin-bottom: 1.2rem;
+  }
+
+  .header {
+    height: 75vh;
+  }
+
+  .header h1 {
+    width: 80vw;
+  }
+
+  .grid-2 {
+    grid-template-columns: 1fr !important;
+  }
+
+  .grid-3 {
+    grid-template-columns: 1fr !important;
+  }
+
+  .grid-3 .column-2 {
+    display: none;
+  }
+
+  .grid-3 .column-1 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .grid-3 .column-3 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  section {
+    margin-top: 6rem;
+    height: auto;
+  }
+
+  .main-services .item {
+    flex-direction: column;
+    margin-top: 4rem;
+  }
+
+  .main-services .item .item-content {
+    width: 90vw;
+  }
+
+  .main-services .item .icon {
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+  }
+
+  .basic-info {
+    height: 70vh;
+    margin: 1.4rem;
+  }
+
+  .basic-info .column-1 {
+    margin: 0.5rem 0%;
+    width: auto;
+  }
+  .basic-info .column-2 {
+    margin: 0%;
+    width: auto;
+  }
+
+  .services .item-parent {
+    width: 100vw;
+  }
+
+  .services .item-parent {
+    height: auto;
+    margin: 1rem;
+  }
+
+  .services .item-line {
+    display: none;
+  }
+
+  .about {
+    height: 70vh;
+    margin: 1.4rem;
+  }
+
+  .about h1 {
+    text-align: left;
+    font-size: 2rem;
+  }
+
+  .about .column-1 {
+    margin: 0.5rem 0%;
+    width: auto;
+  }
+  .about .column-2 {
+    margin: 0%;
+    width: auto;
+  }
+
+  .contact .column-2 {
+    margin-top: 4rem;
+    width: 80vw;
+    margin-left: 0%;
+  }
+}
