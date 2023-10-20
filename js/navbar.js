@@ -2,20 +2,7 @@ const header = document.querySelector("nav .container");
 const headerImg = document.querySelector(".logo img");
 const links = document.querySelectorAll(".links a");
 
-window.addEventListener("scroll", () => {
-  var scroll = window.scrollY;
-  if (scroll > 400) {
-    header.style.height = "3rem";
-    links.forEach((elem) => {
-      elem.style.fontSize = "0.8rem";
-    });
-  } else {
-    header.style.height = "4rem";
-    links.forEach((elem) => {
-      elem.style.fontSize = "0.9rem";
-    });
-  }
-});
+// window.addEventListener("scroll", () => {});
 
 const hamburger_menu = document.querySelector(".hamburger-menu");
 const bars = document.querySelector(".hamburger-menu .bar");
