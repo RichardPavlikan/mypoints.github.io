@@ -331,6 +331,7 @@ h1 {
     margin-left: 0;
     margin-right: 0;
   }
+
   .grid-3 .column-3 {
     margin-left: 0;
     margin-right: 0;
@@ -344,10 +345,15 @@ h1 {
   .main-services .item {
     flex-direction: column;
     margin-top: 4rem;
+    text-align: center;
   }
 
   .main-services .item .item-content {
     width: 90vw;
+  }
+
+  .main-services .item-line {
+    display: none;
   }
 
   .main-services .item .icon {
@@ -356,13 +362,14 @@ h1 {
   }
 
   .basic-info {
-    height: 70vh;
+    height: 100vh;
     margin: 1.4rem;
   }
 
   .basic-info .column-1 {
     margin: 0.5rem 0%;
-    width: auto;
+    width: 80%;
+    text-align: left;
   }
   .basic-info .column-2 {
     margin: 0%;
