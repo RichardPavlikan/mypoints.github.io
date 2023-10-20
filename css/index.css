@@ -300,19 +300,6 @@ h1 {
   .links a.active {
     margin: 0;
   }
-
-  .services .items {
-    grid-template-columns: 1fr;
-  }
-
-  .services .item-parent {
-    height: auto;
-    margin: 4rem 1rem;
-  }
-
-  .services .item-line {
-    transform: translateX(-480px);
-  }
 }
 
 @media (max-width: 700px) {
@@ -380,19 +367,6 @@ h1 {
   .basic-info .column-2 {
     margin: 0%;
     width: auto;
-  }
-
-  .services .item-parent {
-    width: 100vw;
-  }
-
-  .services .item-parent {
-    height: auto;
-    margin: 1rem;
-  }
-
-  .services .item-line {
-    display: none;
   }
 
   .about {
