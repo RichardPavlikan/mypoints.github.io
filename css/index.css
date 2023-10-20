@@ -76,18 +76,31 @@ h1 {
 /* SHOPS */
 
 .shops {
-  height: 100vh;
+  margin-top: 10rem;
+  height: 350vh;
+  background-color: var(--main-color);
+  color: white;
 }
 
-.shops .grid-2 {
-  grid-template-columns: 1fr 2fr;
+.shops .main-title h1 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 5rem;
 }
 
-.shops .grid-2 .column-1 img {
+.shops .main-point .grid-2 {
+  grid-template-columns: 0.75fr 1fr;
+}
+
+.shops .point .small-image {
+  width: 70%;
+}
+
+/* .shops .grid-2 .column-1 img {
   border: var(--main-color) 4px solid;
   border-radius: 1.2rem;
   background-color: var(--background-color);
-}
+} */
 
 /* FORM */
 
